@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_Us"
+    android:background="#323232"
+    android:orientation="vertical"
+    >
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+       >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#80111111"
+            >
+
+
+        <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="0dp"
+        android:tint="#ffffff"
+        android:padding="5dp"
+        android:src="@drawable/geritusu"
+        android:id="@+id/geri2"
+
+        />
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/hakkımızda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:text="HAKKIMIZDA"
+            android:textColor="@android:color/white"
+           />
+</LinearLayout>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Gezmedik Yer Bırakmayın!"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:id="@+id/gezi"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/gezi"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/gezi"
+        android:id="@+id/resim"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resim"
+        android:text="@string/hakkımızda"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        />
+    </RelativeLayout>
+   </ScrollView>
+
+
+</RelativeLayout>

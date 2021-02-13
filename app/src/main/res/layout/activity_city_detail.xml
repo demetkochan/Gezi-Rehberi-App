@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CityDetail"
+        android:orientation="vertical"
+        android:background="#323232"
+
+
+        >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:orientation="horizontal"
+                android:background="#111111"
+                >
+
+                <ImageView
+                    android:id="@+id/şehir_resim"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_weight="1"
+
+                    android:alpha="0.8"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@android:drawable/sym_def_app_icon"
+
+                    />
+                <TextView
+                    android:id="@+id/şehir_adı"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+
+                    android:layout_centerInParent="true"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#80111111"
+                    android:orientation="horizontal">
+
+                                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:tint="#ffffff"
+                        android:padding="5dp"
+                        android:src="@drawable/geritusu"
+                        android:id="@+id/geri"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="ŞEHİR DETAYI"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center"
+
+
+
+                        />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:id="@+id/scrollView"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/acıklama"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@android:color/white"
+
+                            android:textSize="16sp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center_horizontal"
+
+
+                            />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_weight="1"
+                        android:layout_marginVertical="40dp"
+
+                        >
+
+                        <VideoView
+                            android:id="@+id/video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#0000" />
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GALERİ"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginVertical="10dp"
+                        android:padding="5dp"
+                        android:paddingBottom="0dp"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="0dp"
+
+
+                        >
+
+
+                        <GridView
+                            android:id="@+id/gridview"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:columnWidth="80dp"
+                            android:gravity="center"
+                            android:horizontalSpacing="5dp"
+                            android:numColumns="auto_fit"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="5dp" />
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+            </ScrollView>
+    <Button
+        android:id="@+id/site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="internet Sitesine Git"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        />
+
+        </LinearLayout>
